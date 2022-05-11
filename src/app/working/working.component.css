@@ -138,9 +138,15 @@
 }
 .card-text2{
     color: #df8f01;
-    position: absolute;
     left: 18px;
     top: 8px;
+    margin-left: 3px;
+}
+.white{
+    color: white;
+    left: 18px;
+    top: 8px;
+    margin-left: 3px;
 }
 .font{
     position: absolute;
@@ -174,7 +180,7 @@
     top: 40px;
     z-index: 1;
 }
-.card2-child a{
+.card2-child > a{
     display: block;
     width: 100%;
     padding: 0.25rem 1.5rem;
@@ -185,12 +191,46 @@
     white-space: nowrap;
     background-color: transparent;
     border: 0;
+    position: relative;
+    height: 30px;
 }
 .right{
-    float: right;
+    color: white;
+    position: absolute;
+    left: 122px;
+    top: 11px;
+    font-size: 13px;
 }
-.down{
-    margin-top: 30px;
+.yellow{
+    color: #df8f01;
+}
+.right-card3{
+    left:200px
+}
+.right-card4{
+    left:100px;
+}
+.checkbox{
+    display: block;
+    position: relative;
+    cursor: pointer;
+    margin-bottom: 1px!important;
+}
+input{
+    color: #de8d01;
+    font-size: 20px;
+    display: inline-block;
+    width: 19px;
+    background-color: #000;
+    height: 19px;
+    outline: 1px solid #de8d01;
+}
+.checkbox-in{
+    position: absolute;
+    top: 5px;
+    left: 41px;
+    height: 16px;
+    width: 16px;
 }
 .card3-child{
  width: 225px;
