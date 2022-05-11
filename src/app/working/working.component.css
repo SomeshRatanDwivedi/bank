@@ -138,14 +138,16 @@
 }
 .card-text2{
     color: #df8f01;
-    left: 18px;
-    top: 8px;
+    left: 2px;
+    top: 4px;
+    position: relative;
     margin-left: 3px;
 }
 .white{
     color: white;
-    left: 18px;
-    top: 8px;
+    left: 2px;
+    top: 4px;
+    position: relative;
     margin-left: 3px;
 }
 .font{

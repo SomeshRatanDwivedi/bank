@@ -89,7 +89,7 @@ export class WorkingComponent implements OnInit {
       }
     console.log(this.selectedInCard3);
   }
-  isContain(ele:string){
+  isContain(ele:string):boolean{
     let idx=this.selectedInCard3.indexOf(ele);
     return idx!=-1;
   }
