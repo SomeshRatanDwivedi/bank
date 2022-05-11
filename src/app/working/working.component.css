@@ -268,11 +268,36 @@
     top: 10px;
 }
 .card1-click{
-    width: 500px;
-    height: 500px;
-    background-color: #000;
+    width: 400px;
+    height: 400px;
+    background-color: #1b1818;
     position: absolute;
     z-index: 1;
     left: 500px;
     top: 50px;
+    background-clip: padding-box;
+    border: 1px solid rgba(0,0,0,.2);
+    border-radius: 0.3rem;
+    padding: 50px;
 }
+.card1-click-content{
+    width: 80%;
+    text-align: center;
+    margin: auto;
+}
+.card1-click-btn{
+    display: inline-block;
+    font-weight: 400;
+    color: #212529;
+    text-align: center;
+    background-color: #df8f01;
+    border: 1px solid transparent;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+    margin-top: 50px;
+    width: 100px;
+    text-align: center;
+}
+

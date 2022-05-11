@@ -18,7 +18,7 @@
             </div>
         </div>
         <div class="child2-second">
-            <div class="card card1">
+            <div class="card card1" (click)="selectedCard='card1'">
                 <img src="https://clearmydues.com/ethera/assets/images/icons/export.svg" alt="" class="card-img1">
                 <span class="card-text1">Export Master Report</span>
             </div>
@@ -198,6 +198,15 @@
         </div>
     </div>
 </div>
-<div class="card1-click">
-
+<div class="card1-click" *ngIf="selectedCard=='card1'">
+    <div class="card1-click-content">
+      <img src="https://clearmydues.com/ethera/assets/images/icons/timer.svg" alt="" class="search">
+    </div>
+    <div class="card1-click-content">
+        Your report is being generated.
+        Download link for the report will be mailed to you on your registered email id within 24 hours.
+    </div>
+    <div class="card1-click-content">
+        <button class="card1-click-btn" (click)="selectedCard=''"> Ok </button>
+    </div>
 </div>
