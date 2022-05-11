@@ -1,0 +1,278 @@
+.parent{
+    width: 90%;
+    margin: auto;
+}
+.child2{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.child2-first{
+    width: 25%;
+    position: relative;
+}
+.user{
+    position: relative;
+    background-color: #df8f01;
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+    float: left;
+}
+.prev1{
+    position: relative;
+    background-color: #fff;
+    height: 30px;
+    width: 30px;
+    border-radius: 100%;
+    float: left;
+    top: 5px;
+    left: 9px;
+}
+.prev2{
+    left: 42px;
+    color: black;
+    position: relative;
+    background-color: #fff;
+    height: 30px;
+    width: 30px;
+    border-radius: 100%;
+    float: left;
+    top: 5px;
+}
+.user i{
+    position:absolute;
+    font-size: 24px;
+    left: 10px;
+    top: 6px;
+    color:#292929
+}
+.prev1 i{
+    position:absolute;
+    font-size: 15px;
+    left: 8px;
+    top: 6px;
+    color:#292929
+}
+.line{
+    width: 40px;
+    height: 1px;
+    background-color: #fff;
+    position: absolute;
+    left: 41px;
+    top: 20px;
+    
+
+}
+.rupee{
+    position: absolute;
+    left: 82px;
+}
+.rupee span{
+    position:absolute;
+    font-size: 24px;
+    left: 13px;
+    top: 6px;
+}
+.prev2 span{
+    position:absolute;
+    font-size: 15px;
+    left: 9px;
+    top: 5px;
+}
+.per-line{
+   float: right;
+   border-left: 2px solid #df8f01 ;
+   color: #df8f01;
+   width:50% ;
+   padding:10px;
+   font-size: 16px;
+}
+.child2-second{
+    width: 75%;
+    display: flex;
+    flex: auto;
+    justify-content: flex-end;
+}
+.card{
+    box-shadow: 0 3px 6px #000;
+    border: 1px solid #df8f01;
+    border-radius: 20px;
+    opacity: 1;
+    color: #df8f01;
+    align-items: center;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 4px 12.8px;
+
+    position: relative;
+    justify-content: space-between;
+    white-space: nowrap;
+    margin-right: 25px;
+
+}
+.card1{
+  width: 200px;
+}
+.card2{
+    width: 130px;
+}
+.card3{
+    width: 200px;
+}
+.card4{
+    width: 100px;
+}
+.card-img1{
+    width: 16px;
+    height: 18px;
+    position: absolute;
+   
+    top: 8px;
+}
+.card-text1{
+    color: #df8f01;
+    position: absolute;
+    left: 43px;
+    top: 8px;
+}
+.card-text2{
+    color: #df8f01;
+    position: absolute;
+    left: 18px;
+    top: 8px;
+}
+.font{
+    position: absolute;
+    left: 114px;
+    top: 7px;
+    height: 19px;
+    width: 18px;
+    border-radius: 100%;
+    border: 1px solid #df8f01;
+   
+    padding-left: 3px;
+}
+.font2{
+   left: 173px;
+}
+.font3{
+   left: 94px;
+}
+.card2-child{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    float: left;
+    font-size: 1rem;
+    text-align: left;
+    list-style: none;
+    background-color: black;
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: 0.25rem;
+    width: 156px;
+    top: 40px;
+    z-index: 1;
+}
+.card2-child a{
+    display: block;
+    width: 100%;
+    padding: 0.25rem 1.5rem;
+    clear: both;
+    font-weight: 400;
+    color: #212529;
+    text-align: inherit;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+}
+.right{
+    float: right;
+}
+.down{
+    margin-top: 30px;
+}
+.card3-child{
+ width: 225px;
+}
+.card4-child{
+  width: 125px;
+}
+.child3{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+.loan-info{
+    display: flex;
+    justify-content: space-between;
+    width: 17%;
+    border-radius: 20px;
+    opacity: 1;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 4px 12.8px;
+    background: #1e1e1e 0 0 no-repeat padding-box;
+    box-shadow: 2px 4px 6px rgb(0 0 0 / 56%);
+    position: relative;
+}
+.info-icon{
+    width: 44px;
+    height: 39px;
+    margin-left: 10px;
+    text-align: center;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+}
+.info-text{
+    padding: 10px;
+    font-size: 12px;
+    flex: 1 1 0;
+}
+.logo{
+    width: 66px;
+    position: relative;
+    top: -6px;
+}
+.info-logo{
+    width: 16px;
+}
+.info-title{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+
+}
+.lower-info{
+    text-align: left;
+    font-size: 20px;
+    color: #3cb4de;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    position: relative;
+}
+.lower-info a{
+    cursor: pointer; 
+    text-decoration: none;
+    color: #3cb4de;
+}
+.percent{
+    font-size: 13px;
+    color: #fe877a;
+    position: absolute;
+    right: 0;
+    top: 10px;
+}
+.card1-click{
+    width: 500px;
+    height: 500px;
+    background-color: #000;
+    position: absolute;
+    z-index: 1;
+    left: 500px;
+    top: 50px;
+}

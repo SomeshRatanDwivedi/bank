@@ -1,0 +1,203 @@
+<div class="parent">
+    <div class="child1">
+        <h3 class="heading">Portfolio Overview</h3>
+    </div>
+    <div class="child2">
+        <div class="child2-first">
+            <div [ngClass]="selected=='user'?'user':'prev1'" (click)="onSubmit('user')">
+                <i class="fa-solid fa-user"></i>
+            </div>
+            <div class="line">
+
+            </div>
+            <div [ngClass]="selected=='rupee'?['rupee','user']:'prev2' " (click)="onSubmit('rupee')">
+                <span rupee-symbol>&#8377; </span>
+            </div>
+            <div class="per-line">
+                <span>By Amount </span>
+            </div>
+        </div>
+        <div class="child2-second">
+            <div class="card card1">
+                <img src="https://clearmydues.com/ethera/assets/images/icons/export.svg" alt="" class="card-img1">
+                <span class="card-text1">Export Master Report</span>
+            </div>
+           
+
+            <div class="card" (mouseover)="selectedCard='card2'" (mouseleave)="selectedCard=''">
+                <div class="card2">
+                    <span class="card-text2">Credit Card</span>
+                    <span class="font"><i class="fa-solid fa-chevron-down"></i></span>
+                </div>
+                <div class="card2-child" *ngIf="selectedCard=='card2'">
+                    <a>
+                        <span class="card-text2">Credit Card</span>
+                    </a>
+                    <a class="down">
+                        <span class="card-text2">Loan</span>
+                        <span class="right"><i class="fa-solid fa-chevron-right"></i></span>
+                    </a>
+                </div>
+            </div>
+
+
+            <div class="card" (mouseover)="selectedCard='card3'" (mouseleave)="selectedCard=''">
+                <div class="card3">
+                    <span class="card-text2">Live, Pre-NPA, NPA</span>
+                    <span class="font font2"><i class="fa-solid fa-chevron-down"></i></span>
+                </div>
+                <div class="card2-child card3-child" *ngIf="selectedCard=='card3'">
+                    <a>
+                        <span class="card-text2">Credit Card</span>
+                    </a>
+                    <a class="down">
+                        <span class="card-text2">Loan</span>
+                        <span class="right"><i class="fa-solid fa-chevron-right"></i></span>
+                    </a>
+                </div>
+
+            </div>
+            <div class="card" (mouseover)="selectedCard='card4'" (mouseleave)="selectedCard=''">
+                <div class="card4">
+                    <span class="card-text2">March' 21</span>
+                    <span class=" font font3"><i class="fa-solid fa-chevron-down"></i></span>
+                </div>
+                <div class="card2-child card4-child" *ngIf="selectedCard=='card4'">
+                    <a>
+                        <span class="card-text2">Credit Card</span>
+                    </a>
+                    <a class="down">
+                        <span class="card-text2">Loan</span>
+                        <span class="right"><i class="fa-solid fa-chevron-right"></i></span>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="child3">
+        <div class="loan-info">
+            <div class="info-icon">
+                <img class="logo" src="assets\totalAccounts.png" alt="">
+            </div>
+            <div class="info-text">
+                <p class="info-title">
+                    <span>
+                        Total Accounts
+                    </span>
+                    <span>
+                        <img class="info-logo" src="assets\info-d.png" alt="">
+                    </span>
+                </p>
+                <div class="lower-info">
+                    <span>
+                        <a *ngIf="selected=='user'" href="">9.84 Lac</a>
+                        <a *ngIf="selected=='rupee'">4,178.60 Cr</a>
+                    </span>
+                    <span class="percent">
+
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="loan-info">
+            <div class="info-icon">
+                <img class="logo" src="assets\totalEngagement.png" alt="">
+            </div>
+            <div class="info-text">
+                <p class="info-title">
+                    <span>
+                        Total Engagement
+                    </span>
+                    <span>
+                        <img class="info-logo" src="assets\info-d.png" alt="">
+                    </span>
+                </p>
+                <div class="lower-info">
+                    <span>
+                        <a *ngIf="selected=='user'" href="">9.84 Lac</a>
+                        <a *ngIf="selected=='rupee'">3,384.67 Cr</a>
+                    </span>
+                    <span class="percent">
+                             (83%)
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="loan-info">
+            <div class="info-icon">
+                <img class="logo" src="assets\totalRegistered.png" alt="">
+            </div>
+            <div class="info-text">
+                <p class="info-title">
+                    <span>
+                        Total Login
+                    </span>
+                    <span>
+                        <img class="info-logo" src="assets\info-d.png" alt="">
+                    </span>
+                </p>
+                <div class="lower-info">
+                    <span>
+                        <a *ngIf="selected=='user'" href="">5.90 Lac</a>
+                        <a *ngIf="selected=='rupee'">2,504.66 Cr</a>
+                    </span>
+                    <span class="percent">
+                          (73%)
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="loan-info">
+            <div class="info-icon">
+                <img class="logo" src="assets\digitallyPaid.png" alt="">
+            </div>
+            <div class="info-text">
+                <p class="info-title">
+                    <span>
+                        Digitally Paid
+                    </span>
+                    <span>
+                        <img class="info-logo" src="assets\info-d.png" alt="">
+                    </span>
+                </p>
+                <div class="lower-info">
+                    <span>
+                        <a *ngIf="selected=='user'" href="">3.88 Lac</a>
+                        <a *ngIf="selected=='rupee'">1,628.03 Cr</a>
+                    </span>
+                    <span class="percent">
+                             (66%)
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="loan-info">
+            <div class="info-icon">
+                <img class="logo" src="assets\overallResolved.png" alt="">
+            </div>
+            <div class="info-text">
+                <p class="info-title">
+                    <span>
+                        Overall Resolved
+                    </span>
+                    <span>
+                        <img class="info-logo" src="assets\info-d.png" alt="">
+                    </span>
+                </p>
+                <div class="lower-info">
+                    <span>
+                        <a *ngIf="selected=='user'" href="">5.23 Lac</a>
+                        <a *ngIf="selected=='rupee'">2,172.80 Cr</a>
+                    </span>
+                    <span class="percent">
+                           (53%)
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="card1-click">
+
+</div>
