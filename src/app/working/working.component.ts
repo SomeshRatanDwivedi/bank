@@ -22,9 +22,8 @@ export class WorkingComponent implements OnInit {
       "src":'assets/totalAccounts.png',
       "crore":"4,178.60 Cr",
       "info":"assets/info-d.png"
-      
-
     },
+
     {
       "heading":"Total Engagement",
       "lac":"8.12 Lac",
@@ -59,8 +58,9 @@ export class WorkingComponent implements OnInit {
       "src":"assets/overallResolved.png",
       "crore":"2,172.80 Cr",
       "info":"assets/info-d.png"
+    },
 
-    }
+
   ]
   selectedInCard2:string="Credit Card";
   selectedInCard3:string[]=["Live", "Pre-NPA",  "NPA"];
