@@ -41,16 +41,25 @@
 
             <div class="card" (mouseover)="selectedCard='card3'" (mouseleave)="selectedCard=''">
                 <div class="card3">
-                    <span class="card-text2" *ngFor="let card of selectedInCard3">{{card+", "}}</span>
+                    <span class="card-text2" *ngFor="let card of listArray">{{card+", "}}</span>
                     <span class="font font2"><i class="fa-solid fa-chevron-down"></i></span>
                 </div>
             
-                <div class="card2-child card3-child" *ngIf="selectedCard=='card3'" >
-                    <label *ngFor="let card of card3" (click)="changeSelectCard3(card)" class="checkbox">
-                        <input type="checkbox" checked>
+                <!-- <div class="card2-child card3-child" *ngIf="selectedCard=='card3'" >
+                    <label *ngFor="let card of card3" class="checkbox">
+                        <input type="checkbox" [(ngModel)]="selectedInCard3" [checked]="isContain(card)">
                         <span class="checkbox-in" [ngClass]="isContain(card)?'card-text2':'white'">{{card}}</span>
                         <span [ngClass]="isContain(card)?['right', 'yellow', 'right-card3']:['right', 'right-card3']"><i class="fa-solid fa-chevron-right"></i></span>
                     </label>
+                </div> -->
+
+                <div class="card2-child card3-child" *ngIf="selectedCard=='card3'" >
+                    <span *ngFor="let card of listArray; let i = index;" class="checkbox">
+                        <input type="checkbox" name="card{{card.id}}" [(ngModel)]="card.checked">
+                        <label for="card{{card.id}}" >{{card.value}}</label>
+                        <!-- <span class="checkbox-in" [ngClass]="isContain(card)?'card-text2':'white'">{{card}}</span> -->
+                        <!-- <span [ngClass]="isContain(card)?['right', 'yellow', 'right-card3']:['right', 'right-card3']"><i class="fa-solid fa-chevron-right"></i></span> -->
+                    </span>
                 </div>
 
             </div>

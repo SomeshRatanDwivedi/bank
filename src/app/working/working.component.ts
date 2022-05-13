@@ -80,6 +80,7 @@ export class WorkingComponent implements OnInit {
     "May'21"
   ]
   changeSelectCard3(ele:string){
+    console.log(ele, this.selectedInCard3)
       let idx=this.selectedInCard3.indexOf(ele);
       if(idx===-1){
         this.selectedInCard3.push(ele);
@@ -98,5 +99,8 @@ export class WorkingComponent implements OnInit {
   }
   ngOnInit(): void {
   }
+
+
+  listArray = [{id: 1, value: "Live", checked: true }, {id: 2, value: "Pre-NPA", checked: true }, {id: 3, value: "NPA", checked: false }]
 
 }
