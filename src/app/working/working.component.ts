@@ -79,8 +79,8 @@ export class WorkingComponent implements OnInit {
     "April'21",
     "May'21"
   ]
-  changeSelectCard3(ele:string){
-    console.log(ele, this.selectedInCard3)
+  changeSelectCard3(){
+   /* console.log(ele, this.selectedInCard3)
       let idx=this.selectedInCard3.indexOf(ele);
       if(idx===-1){
         this.selectedInCard3.push(ele);
@@ -88,7 +88,8 @@ export class WorkingComponent implements OnInit {
       else{
         this.selectedInCard3.splice(idx, 1);
       }
-    console.log(this.selectedInCard3);
+    console.log(this.selectedInCard3);*/
+    console.log(this.listArray);
   }
   isContain(ele:string):boolean{
     let idx=this.selectedInCard3.indexOf(ele);
@@ -101,6 +102,22 @@ export class WorkingComponent implements OnInit {
   }
 
 
-  listArray = [{id: 1, value: "Live", checked: true }, {id: 2, value: "Pre-NPA", checked: true }, {id: 3, value: "NPA", checked: false }]
+  listArray = [
+  {
+    id: 1,
+  value: "Live", 
+  checked: false
+ }, 
+  {
+    id: 2,
+    value: "Pre-NPA", 
+    checked: true 
+  }, 
+  {
+    id: 3, 
+    value: "NPA", 
+    checked: true
+  }
+]
 
 }

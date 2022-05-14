@@ -4,10 +4,12 @@ import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { WorkingComponent } from './working/working.component';
 import { RouterModule } from '@angular/router';
+import { FilterPipe } from './filter.pipe';
 @NgModule({
   declarations: [
     AppComponent,
-    WorkingComponent
+    WorkingComponent,
+    FilterPipe
   ],
   imports: [
     BrowserModule,
