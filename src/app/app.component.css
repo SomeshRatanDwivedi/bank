@@ -1,0 +1,39 @@
+.navbar{
+   
+    width:5%;
+    height:793px;
+    background-color: #160c01;
+    float: left;
+
+}
+
+.li-img{
+    width: 23px;
+    height: 24px;
+}
+.nav-li{
+  width: 100%;
+  text-align: center;
+  height: 100px;
+}
+.nav-ul{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.text{
+    font-size: 10px;
+}
+.after-working{
+    width: 25%;
+    margin: auto;
+    text-align: center;
+    border: 1px solid grey;
+    background-color: #de8d01;
+    margin-top: 100px;
+    height: 200px;
+    padding-top: 70px;
+    color: black;
+}

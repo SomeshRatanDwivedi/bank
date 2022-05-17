@@ -6,8 +6,8 @@ import { Pipe, PipeTransform } from '@angular/core';
 export class FilterPipe implements PipeTransform {
 
   transform(arr:any[], selected:boolean): any[] {
-     const newarr=arr.filter((ele)=>{
-       return ele.checked==selected;
+     const newarr=arr.filter((ele:any)=>{
+       return ele.checked==true;
      })
      console.log(newarr);
      return newarr;

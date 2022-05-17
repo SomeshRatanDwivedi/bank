@@ -9,7 +9,7 @@ import { FilterPipe } from './filter.pipe';
   declarations: [
     AppComponent,
     WorkingComponent,
-    FilterPipe
+    FilterPipe,
   ],
   imports: [
     BrowserModule,
@@ -23,7 +23,7 @@ import { FilterPipe } from './filter.pipe';
         path:'',
         redirectTo:'/working',
         pathMatch:'full'
-      }
+      },
  
      ])
   ],
