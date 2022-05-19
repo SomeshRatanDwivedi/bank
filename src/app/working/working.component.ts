@@ -63,7 +63,6 @@ export class WorkingComponent implements OnInit {
 
   ]
   selectedInCard2:string="Credit Card";
-  selectedInCard3:string[]=["Live", "Pre-NPA",  "NPA"];
   selectedInCard4:string="March'21";
   card2=[
     "Credit Card",
@@ -79,29 +78,14 @@ export class WorkingComponent implements OnInit {
     "April'21",
     "May'21"
   ]
-  changeSelectCard3(){
-   /* console.log(ele, this.selectedInCard3)
-      let idx=this.selectedInCard3.indexOf(ele);
-      if(idx===-1){
-        this.selectedInCard3.push(ele);
-      }
-      else{
-        this.selectedInCard3.splice(idx, 1);
-      }
-    console.log(this.selectedInCard3);*/
-    console.log(this.listArray);
-  }
-  isContain(ele:string):boolean{
-    let idx=this.selectedInCard3.indexOf(ele);
-    return idx!=-1;
-  }
+
+
   onSubmit(ele:string){
     this.selected=ele;
   }
   ngOnInit(): void {
   }
-
-
+ 
   listArray = [
   {
     id: 1,
@@ -119,5 +103,8 @@ export class WorkingComponent implements OnInit {
     checked: true
   }
 ]
+changeSelectCard3(){
+ console.log(this.listArray);
+}
 
 }

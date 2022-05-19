@@ -254,7 +254,7 @@ input{
 .loan-info{
     display: flex;
     justify-content: space-between;
-    width: 17%;
+    width: 19%;
     border-radius: 20px;
     opacity: 1;
     color: white;
