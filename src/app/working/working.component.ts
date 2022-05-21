@@ -14,6 +14,7 @@ export class WorkingComponent implements OnInit {
   rupee:string="rupee";
   selected:string="user";
   selectedCard:string="";
+  selectedTime:string="";
   cardDetails=[
     {
       "heading":"Total Accounts",
@@ -104,7 +105,8 @@ export class WorkingComponent implements OnInit {
   }
 ]
 changeSelectCard3(){
- console.log(this.listArray);
+ let date=new Date();
+ this.selectedTime=date.toString();
 }
 
 }

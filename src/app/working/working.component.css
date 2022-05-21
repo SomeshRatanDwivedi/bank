@@ -6,6 +6,7 @@
 }
 .child1{
 margin-bottom: 25px;
+margin-top: 25px;
 }
 .child2{
     display: flex;
@@ -19,8 +20,8 @@ margin-bottom: 25px;
 .user{
     position: relative;
     background-color: #df8f01;
-    height: 40px;
-    width: 40px;
+    height: 35px;
+    width: 35px;
     border-radius: 100%;
     float: left;
 }
@@ -46,11 +47,11 @@ margin-bottom: 25px;
     top: 5px;
 }
 .user i{
-    position:absolute;
-    font-size: 24px;
-    left: 10px;
+    position: absolute;
+    font-size: 21px;
+    left: 8px;
     top: 6px;
-    color:#292929
+    color: #292929;
 }
 .prev1 i{
     position:absolute;
@@ -74,10 +75,10 @@ margin-bottom: 25px;
     left: 82px;
 }
 .rupee span{
-    position:absolute;
+    position: absolute;
     font-size: 24px;
-    left: 13px;
-    top: 6px;
+    left: 10px;
+    top: 4px;
 }
 .prev2 span{
     position:absolute;
@@ -113,7 +114,7 @@ margin-bottom: 25px;
     position: relative;
     justify-content: space-between;
     white-space: nowrap;
-    margin-right: 25px;
+    margin-left: 20px;
 
 }
 .card1{
@@ -249,13 +250,14 @@ input{
     width: 100%;
     display: flex;
     justify-content: space-between;
-    margin: 20px;
+    margin: 17px 3px;
+
 }
 .loan-info{
     display: flex;
     justify-content: space-between;
     width: 19%;
-    border-radius: 20px;
+    border-radius: 5px;
     opacity: 1;
     color: white;
     cursor: pointer;
@@ -268,7 +270,7 @@ input{
 .info-icon{
     width: 44px;
     height: 39px;
-    margin-left: 10px;
+    margin-left: -3px;
     text-align: center;
     display: flex;
     align-items: baseline;
@@ -353,9 +355,19 @@ input{
 
 .profile{
     width: 100%;
-    height: 80px;
+    height: 72px;
     border: 0;
     border-bottom: 1px solid black;
     margin-bottom: 10px;
+}
+.checkbox-text{
+    position: relative;
+    left: 19px;
+    top: -3px;
+}
+.heading{
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: 1.2;
 }
 

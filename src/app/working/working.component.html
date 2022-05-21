@@ -7,7 +7,7 @@
     
 
     <div class="child1">
-        <h3 class="heading">Portfolio Overview</h3>
+        <h5 class="heading">Portfolio Overview</h5>
     </div>
     <div class="child2">
         <div class="child2-first">
@@ -48,14 +48,14 @@
 
             <div class="card" (mouseover)="selectedCard='card3'" (mouseleave)="selectedCard=''">
                 <div class="card3">
-                    <span class="card-text2" *ngFor="let card of listArray | filter:true">{{card.value+", "}}</span>
+                    <span class="card-text2" *ngFor="let card of listArray | filter:true:selectedTime">{{card.value+", "}}</span>
                     <span class="font font2"><i class="fa-solid fa-chevron-down"></i></span>
                 </div>
-
+                        <!---->
                 <div class="card2-child card3-child" *ngIf="selectedCard=='card3'" >
                     <span *ngFor="let card of listArray" class="checkbox">
                         <input type="checkbox" name="card{{card.id}}" [(ngModel)]="card.checked" (change)="changeSelectCard3()">
-                        <label for="card{{card.id}}" >{{card.value}}</label>
+                        <label for="card{{card.id}}" class="checkbox-text" >{{card.value}}</label>
                     </span>
                 </div>
 
