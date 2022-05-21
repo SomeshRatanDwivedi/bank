@@ -1,12 +1,14 @@
-import { ThisReceiver } from '@angular/compiler';
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  selector: 'app-settlementcontent',
+  templateUrl: './settlementcontent.component.html',
+  styleUrls: ['./settlementcontent.component.css']
 })
-export class AppComponent {
+export class SettlementcontentComponent implements OnInit {
+
+  ngOnInit(): void {
+  }
   constructor(){
     this.fillpageButton();
   }
@@ -533,4 +535,5 @@ settlementHeading:string[]= ["S.No.", "TOS", "Pre-Approved Offer Amount", "Payme
 function show() {
     throw new Error('Function not implemented.');
 }
+
 

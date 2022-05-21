@@ -7,6 +7,10 @@ import { RouterModule } from '@angular/router';
 import { FilterPipe } from './filter.pipe';
 import { SettlementComponent } from './settlement/settlement.component';
 import { SettlepagePipe } from './settlepage.pipe';
+import { BaseComponent } from './base/base.component';
+import { LeftnavbarComponent } from './leftnavbar/leftnavbar.component';
+import { HeaderComponent } from './header/header.component';
+import { SettlementcontentComponent } from './settlementcontent/settlementcontent.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -14,6 +18,10 @@ import { SettlepagePipe } from './settlepage.pipe';
     FilterPipe,
     SettlementComponent,
     SettlepagePipe,
+    BaseComponent,
+    LeftnavbarComponent,
+    HeaderComponent,
+    SettlementcontentComponent,
   ],
   imports: [
     BrowserModule,
@@ -24,9 +32,22 @@ import { SettlepagePipe } from './settlepage.pipe';
         component: WorkingComponent
       },
       {
+        path:"base",
+        component: BaseComponent
+      },
+      {
         path:'',
-        redirectTo:'/working',
+        redirectTo:'/base',
         pathMatch:'full'
+      },
+     
+      {
+        path:"header",
+        component: HeaderComponent
+      },
+      {
+        path:"leftnavbar",
+        component: LeftnavbarComponent
       },
       {
         path:"settle",

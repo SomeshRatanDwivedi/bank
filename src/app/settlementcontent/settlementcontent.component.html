@@ -1,0 +1,146 @@
+<div class="settle-parent">
+    <div class="profile">
+
+    </div>
+    <div class="parent">
+        <div class="child1">
+            <h5 class="heading">Settlement Offers</h5>
+        </div>
+        <div class="child2">
+            <div class="child2-first">
+                <div [ngClass]="selected=='user'?'user':'prev1'"
+                    (click)="selected='user'; selectedbtn=1;   selectedArray=settlementArray1; fillpageButton(); show()">
+                    <i class="fa-regular fa-file-lines"></i>
+                    <i class="fa-solid fa-hourglass"></i>
+                </div>
+                <div [ngClass]="selected=='user'?'userline':'rupeeline'">
+
+                </div>
+                <div [ngClass]="selected=='rupee'?['rupee','user']:'prev2'"
+                    (click)="selected='rupee'; selectedbtn=1; selectedArray=settlementArray2; fillpageButton(); show()">
+                    <i class="fa-regular fa-file-lines"></i>
+                    <i class="fa-solid fa-square-check"></i>
+                </div>
+                <div class="per-line">
+                    <span *ngIf="selected=='user'">Pending Offers </span>
+                    <span *ngIf="selected=='rupee'">Actioned Offers </span>
+                </div>
+            </div>
+            <div class="child2-second">
+                <div class="card" (mouseover)="selectedCard='card2'"
+                    (mouseleave)="selectedCard=''">
+                    <div class="card2">
+                        <span class="card-text2">{{selectedInCard2}}</span>
+                        <span class="font"><i class="fa-solid fa-chevron-down"></i></span>
+                    </div>
+
+                    <div class="card2-child" *ngIf="selectedCard=='card2'">
+                        <a *ngFor="let card of card2"
+                            (click)="selectedInCard2=card">
+                            <span
+                                [ngClass]="selectedInCard2==card?'card-text2':'white'">{{card}}</span>
+                            <span [ngClass]="selectedInCard2==card?['right',
+                                'yellow']:'right'"><i class="fa-solid
+                                    fa-chevron-right"></i></span>
+                        </a>
+                    </div>
+                </div>
+                <div class="card" (mouseover)="selectedCard='card4'"
+                    (mouseleave)="selectedCard=''">
+                    <div class="card4">
+                        <span class="card-text2">{{selectedInCard4}}</span>
+                        <span class="font font3"><i class="fa-solid
+                                fa-chevron-down"></i></span>
+                    </div>
+                    <div class="card2-child card4-child"
+                        *ngIf="selectedCard=='card4'">
+                        <a *ngFor="let card of card4"
+                            (click)="selectedInCard4=card">
+                            <span
+                                [ngClass]="selectedInCard4==card?'card-text2':'white'">{{card}}</span>
+                            <span [ngClass]="selectedInCard4==card?['right',
+                                'yellow',
+                                'right-card4']:['right','right-card4']"><i
+                                    class="fa-solid fa-chevron-right"></i></span>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="table-container">
+            <div class="features">
+                <div class="entries">Show Entries</div>
+                <div class="dropdown" (mouseover)="selectedSettlement='first'"
+                    (mouseleave)="selectedSettlement=''">
+                    <div class="outline-button">
+                        {{selectedPage}}
+                        <span class="pages-font"><i class="fa-solid
+                                fa-chevron-down"></i></span>
+                    </div>
+                    <div class="card2-child card4-child pages"
+                        *ngIf="selectedSettlement=='first'">
+                        <a *ngFor="let card of pages"
+                            (click)="selectedPage=card; fillpageButton();
+                            selectedbtn=1; show()">
+                            <span
+                                [ngClass]="selectedPage==card?'pages-child-text':'pages-white'">{{card}}</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="card card1" (click)="selectedSettlement='second'">
+                    <img
+                        src="https://clearmydues.com/ethera/assets/images/icons/export.svg"
+                        alt="" class="card-img1">
+                    <span class="card-text1">Export</span>
+                </div>
+                <div class="outline-button search">
+                    <input type="text" class="search-input"
+                        placeholder="Search">
+                    <span class="search-font"><i class="fa-solid
+                            fa-magnifying-glass"></i></span>
+                </div>
+            </div>
+            <div class="div-table">
+                <div class="div-body">
+                    <div class="div-row">
+                        <div class="div-col" *ngFor="let i of
+                            settlementHeading">{{i}}</div>
+                    </div>
+                    
+                        <div class="div-row" *ngFor="let row of selectedArray
+                            | settlepage:selectedPage:selectedbtn">
+                            <div class="div-col">{{row.SNo}}</div>
+                            <div class="div-col">{{row.TOS}}</div>
+                            <div class="div-col">{{row.preApproved}}</div>
+                            <div class="div-col">{{row.payStartDate}}</div>
+                            <div class="div-col">{{row.offerAmount}}</div>
+                            <div class="div-col">{{row.noOfEmi}}</div>
+                            <div class="div-col">{{row.ctsStartDate}}</div>
+                            <div class="div-col">{{row.ctsAmount}}</div>
+                            <div class="div-col">{{row.ctsNoOfEmi}}</div>
+                            <div class="div-col">{{row.status}}</div>
+                            <div class="div-col">{{row.actionDate}}</div>
+                            <div class="div-col">{{row.actionUser}}</div>
+                        </div>
+                    
+
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="entries">
+                <span>Showing {{start}} to {{end}} of
+                    {{sizeOfsettlementArray1}}</span>
+                <div class="right-content">
+                    <span>Previous</span>
+                    <span (click)="selectedbtn=btn; show()"
+                        [ngClass]="selectedbtn==btn?['background',
+                        'footer-number']:'footer-number'" *ngFor="let btn of
+                        pageButton">{{btn}}</span>
+                    <span>Next</span>
+                </div>
+            </div>
+
+        </div>
+    </div>

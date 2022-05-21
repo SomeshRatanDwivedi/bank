@@ -1,1 +1,30 @@
-<p>settlement works!</p>
+<div class="comp2" >
+    <div class="comp2-first">
+        <span>Settlement Offers</span>
+        <span><img class="info-logo" src="assets/info-d.png" alt=""></span>
+    </div>
+    <div class="comp2-second">
+        <div class="comp2-second-child">
+            <p class="comp2-p">
+                <span class="comp2-second-child-text">
+                    View-Details
+                    <i class="fa-solid fa-eye right"></i>
+
+                </span>
+            </p>
+            <div class="card-parent">
+                <div class="newcard" *ngFor="let card of settlementList">
+                    <div class="card-item1">
+                        <img style="width: 25px;" src={{card.src}} alt="">
+                    </div>
+                    <div class="card-item2">
+                        {{card.rupee}}
+                    </div>
+                    <div class="card-item3">
+                        {{card.text}}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

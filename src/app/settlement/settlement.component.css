@@ -1,0 +1,65 @@
+comp2{
+    width: 34%;
+    overflow: hidden;
+    margin-left: 120px;
+    border-radius: 10px;
+}
+.comp2-first{
+    padding: 8px 10px;
+    font-size: 12px;
+    background-color: #160c01;
+}
+.comp2-second{
+    background-color: rgb(35 35 35);
+    min-height: 300px;
+}
+.info-logo{
+    width: 16px;
+    float: right;
+}
+.comp2-second-child{
+    padding: 10px 30px;
+    white-space: nowrap!important;
+}
+.comp2-p{
+    font-size: 12px;
+    margin-bottom: 40px;
+}
+.comp2-second-child-text{
+    float: right;
+    color: #df8f01;
+    cursor: pointer;
+}
+.card-parent{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+}
+.newcard{
+    box-shadow: 0 1px 6px #000;
+    border-radius: 6px;
+    width: calc(33% - 10px);
+    text-align: center;
+    margin-bottom: 40px;
+}
+.card-item1{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70px;
+    padding-block: 10px;
+}
+.card-item2{
+    margin-bottom: 10px;
+    padding: 22px;
+    font-size: 18px;
+    color: #de2afb;
+}
+.card-item3{
+    background: transparent linear-gradient(180deg,#df8f01,#a95c06) 0 0 no-repeat padding-box;
+    font-size: 11px;
+    border-radius: 0 0 5px 5px;
+    padding: 7px 0;
+}

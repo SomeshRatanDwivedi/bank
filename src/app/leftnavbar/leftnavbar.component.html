@@ -1,0 +1,43 @@
+<div class="navbar">
+    <ul class="nav-ul">
+        <li class="nav-li">
+            <img src="assets/rectangle.png" alt="" class="li-img">
+        </li>
+        <li [ngClass]="selectedComponent==''?['left-border', 'nav-li']:'nav-li'"
+            (click)="selectedComponent=''; openHome() ">
+            <img src="assets/home_menu.png" alt="" class="li-img">
+            <p class="text">Home</p>
+        </li>
+        <li [ngClass]="selectedComponent=='comp2'?['left-border',
+            'nav-li']:'nav-li'" (click)="selectedComponent='comp2' ">
+            <img src="assets/collections.png" alt="" class="li-img">
+            <p class="text">Collections</p>
+        </li>
+        <li [ngClass]="selectedComponent=='comp3'?['left-border',
+            'nav-li']:'nav-li'" (click)="selectedComponent='comp3' ">
+            <img src="assets/recovery.png" alt="" class="li-img">
+            <p class="text">Recovery</p>
+        </li>
+        <li [ngClass]="selectedComponent=='comp4'?['left-border',
+            'nav-li']:'nav-li'" (click)="selectedComponent='comp4' ">
+            <img src="assets/compiegn.png" alt="" class="li-img">
+            <p class="text">Compaign</p>
+        </li>
+        <li [ngClass]="selectedComponent=='comp5'?['left-border',
+            'nav-li']:'nav-li'" (click)="selectedComponent='comp5' ">
+            <img src="assets/product.png" alt="" class="li-img">
+            <p class="text">Product</p>
+        </li>
+        <li [ngClass]="selectedComponent=='comp6'?['left-border',
+            'nav-li']:'nav-li'" (click)="selectedComponent='comp6' ">
+            <img src="assets/queries.png" alt="" class="li-img">
+            <p class="text">Queries</p>
+        </li>
+        <li [ngClass]="selectedComponent=='comp7'?['left-border',
+            'nav-li-last']:'nav-li'" (click)="selectedComponent='comp7' ">
+            <img src="assets/userManager.png" alt="" class="li-img">
+            <p class="text">User Manager </p>
+        </li>
+
+    </ul>
+</div>

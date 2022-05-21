@@ -1,0 +1,435 @@
+.parent{
+    width: 90%;
+    margin: auto;
+    padding-left: 42px;
+    
+}
+.child1{
+margin-bottom: 25px;
+margin-top: 25px;
+}
+.child2{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.child2-first{
+    width: 25%;
+    position: relative;
+}
+.user{
+    position: relative;
+    
+    height: 35px;
+    width: 35px;
+    border-radius: 100%;
+    float: left;
+}
+.prev1{
+    position: relative;
+    height: 30px;
+    width: 30px;
+    border-radius: 100%;
+    float: left;
+    top: 5px;
+    left: 9px;
+}
+.prev2{
+    left: 42px;
+    color: black;
+    position: relative;
+    height: 30px;
+    width: 30px;
+    border-radius: 100%;
+    float: left;
+    top: 5px;
+}
+.user i{
+    position: absolute;
+    font-size: 25px;
+    left: 8px;
+    top: 6px;
+    color: #df8f01
+}
+.user .fa-file-lines{
+    font-size: 37px;
+}
+.user .fa-hourglass{
+    left: 26px;
+    top: 19px;
+}
+.rupee .fa-hourglass{
+    left: 19px;
+    top: 12px;
+}
+.prev1 i{
+    position:absolute;
+    font-size: 24px;
+    left: 8px;
+    top: 6px;
+    color:white
+}
+.prev1 .fa-hourglass{
+    left: 18px;
+    top: 16px;
+    font-size: 18px;
+}
+.rupee .fa-hourglass{
+    left: 19px;
+    top: 12px;
+} 
+.prev2 i{
+    position:absolute;
+    font-size: 26px;
+    left: 8px;
+    top: 6px;
+    color:white
+}
+.prev2 .fa-check{
+    position:absolute;
+    font-size: 18px;
+    left: 19px;
+    top: 12px;
+}
+.userline{
+    width: 41px;
+    height: 2px;
+    background-color: #fff;
+    position: absolute;
+    left: 43px;
+    top: 22px;
+}
+.prev2 .fa-square-check{
+    left: 21px;
+    top: 18px;
+    font-size: 15px;
+}
+.rupeeline{
+    width: 41px;
+    height: 2px;
+    background-color: #fff;
+    position: absolute;
+    left: 41px;
+    top: 22px; 
+}
+.rupee .fa-square-check{
+    left: 26px;
+    top: 23px;
+    font-size: 20px;
+}
+.rupee{
+    position: absolute;
+    left: 76px;
+}
+
+.per-line{
+   float: right;
+   border-left: 2px solid #df8f01 ;
+   color: #df8f01;
+   width:50% ;
+   padding:10px;
+   font-size: 16px;
+}
+.child2-second{
+    width: 75%;
+    display: flex;
+    flex: auto;
+    justify-content: flex-end;
+}
+.card{
+    box-shadow: 0 3px 6px #000;
+    border: 1px solid #df8f01;
+    border-radius: 20px;
+    opacity: 1;
+    color: #df8f01;
+    align-items: center;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 4px 12.8px;
+
+    position: relative;
+    justify-content: space-between;
+    white-space: nowrap;
+    margin-left: 20px;
+
+}
+
+.card2{
+    width: 130px;
+}
+.card4{
+    width: 205px;
+}
+.card-img1{
+    width: 16px;
+    height: 18px;
+    position: absolute;
+   
+    top: 8px;
+}
+.card-text1{
+    color: #df8f01;
+    position: absolute;
+    left: 35px;
+    top: 8px;
+}
+.card-text2{
+    color: #df8f01;
+    left: 2px;
+    top: 4px;
+    position: relative;
+    margin-left: 3px;
+}
+.white{
+    color: white;
+    left: 2px;
+    top: 4px;
+    position: relative;
+    margin-left: 3px;
+}
+.font{
+    position: absolute;
+    left: 114px;
+    top: 7px;
+    height: 19px;
+    width: 18px;
+    border-radius: 100%;
+    border: 1px solid #df8f01;
+   
+    padding-left: 1px;
+}
+.font2{
+   left: 173px;
+}
+.font3{
+   left: 204px;
+}
+.card2-child{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    float: left;
+    font-size: 1rem;
+    text-align: left;
+    list-style: none;
+    background-color: black;
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: 0.25rem;
+    width: 156px;
+    top: 40px;
+    z-index: 1;
+}
+.card2-child > a{
+    display: block;
+    width: 100%;
+    padding: 0.25rem 1.5rem;
+    clear: both;
+    font-weight: 400;
+    color: #212529;
+    text-align: inherit;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+    position: relative;
+    height: 30px;
+}
+.right{
+    color: white;
+    position: absolute;
+    left: 122px;
+    top: 11px;
+    font-size: 13px;
+}
+.yellow{
+    color: #df8f01;
+}
+.right-card3{
+    left:200px
+}
+.right-card4{
+    left:212px;
+}
+.checkbox{
+    display: block;
+    position: relative;
+    cursor: pointer;
+    margin-bottom: 1px!important;
+}
+.card4-child{
+  width: 235px;
+}
+.card4-child a span:hover{
+    color: #df8f01;;
+}
+.card2-child a span:hover{
+    color: #df8f01;
+}
+
+.op{
+    opacity: 0.6;
+}
+
+.profile{
+    width: 100%;
+    height: 72px;
+    border: 0;
+    border-bottom: 1px solid black;
+    margin-bottom: 10px;
+}
+.checkbox-text{
+    position: relative;
+    left: 19px;
+    top: -3px;
+}
+.heading{
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+.features{
+    background: #181818 0 0 no-repeat padding-box;
+    border-radius: 6px 6px 0 0;
+    display: flex;
+    padding-block: 0.85rem;
+    padding-inline: 0.85rem;
+    align-items: center;
+    position: relative;
+}
+.outline-button{
+    box-shadow: 0 3px 6px #000;
+    border: 1px solid #df8f01;
+    border-radius: 20px;
+    opacity: 1;
+    color: #df8f01;
+    display: flex;
+    align-items: center;
+    padding-inline: 0.8rem;
+    padding-block: 4px;
+    cursor: pointer;
+    position: relative;
+    justify-content: space-between;
+    margin-left: 22px;
+    width: 74px;
+}
+.fa-solid{
+    float: right;
+}
+.pages{
+    width: 59px;
+    left: 137px;
+    top: 44px;
+}
+.pages-child-text{
+    color: #df8f01;
+    left: -6px;
+    top: 4px;
+    position: relative;
+    
+}
+.pages-white{
+    color: white;
+    left: -6px;
+    top: 4px;
+    position: relative;
+    
+}
+.pages-font{
+    position: absolute;
+    left: 47px;
+    top: 3px;
+    height: 20px;
+    width: 20px;
+    border-radius: 100%;
+    border: 1px solid #df8f01;
+   
+    padding-left: 1px;
+}
+.table-container{
+    margin-top: 25px;
+}
+.card1{
+    width: 107px;
+    height: 28px;
+  }
+  .card-text1{
+    color: #df8f01;
+    position: absolute;
+    left: 35px;
+    top: 3px;
+}
+.card-img1{
+    width: 16px;
+    height: 18px;
+    position: absolute;
+   
+    top: 3px;
+}
+.search{
+    position: absolute;
+    right: 2rem;
+    width: 201px;
+    height: 36px;
+}
+.search-input{
+    border: none;
+    background: transparent;
+    color: #fff;
+    width: 150px; 
+}
+.div-table{
+    display: table;
+    width: 100%;
+    vertical-align: middle;
+    background: #1e1e1e 0 0 no-repeat padding-box;
+    box-shadow: 2px 4px 6px rgb(0 0 0 / 56%);
+}
+.div-body{
+    display: table-row-group;
+    color: rgb(255 255 255/70%);
+}
+.div-row{
+    display: table-row;
+    border-spacing: 0;
+}
+.div-col{
+    height: 67px;
+    display: table-cell;
+    padding: 0.75rem;
+    font-size: 12px;
+    padding-block: 0.9em;
+    border-spacing: 0;
+    outline: 0;
+    border-collapse: collapse;
+    border: 0;
+    border-bottom: 4px solid #1e1e1e;
+    background: #181818 0 0 no-repeat padding-box;
+    padding-top: 25px;
+}
+.footer{
+    margin: 30px 0;
+    
+}
+.right-content{
+    float: right;
+}
+.footer-number{
+    box-shadow: 0 3px 6px #000;
+    border: 1px solid #df8f01;
+    border-radius: 13px;
+    opacity: 1;
+    color: #df8f01;
+    padding-inline: 0.8rem;
+    padding-block: 4px;
+    cursor: pointer;
+    margin: 0 5px;
+}
+.right-content span{
+    cursor: pointer;
+}
+.background{
+    background-color:#df8f01 ;
+    color: #181818;
+}
+input:focus{
+    outline: none;
+}
