@@ -9,32 +9,32 @@
             <p class="text">Home</p>
         </li>
         <li [ngClass]="selectedComponent=='comp2'?['left-border',
-            'nav-li']:'nav-li'" (click)="selectedComponent='comp2' ">
+            'nav-li']:'nav-li'" (click)="selectedComponent='comp2'; openCollection() ">
             <img src="assets/collections.png" alt="" class="li-img">
             <p class="text">Collections</p>
         </li>
         <li [ngClass]="selectedComponent=='comp3'?['left-border',
-            'nav-li']:'nav-li'" (click)="selectedComponent='comp3' ">
+            'nav-li']:'nav-li'" (click)="selectedComponent='comp3'; openRecovery() ">
             <img src="assets/recovery.png" alt="" class="li-img">
             <p class="text">Recovery</p>
         </li>
         <li [ngClass]="selectedComponent=='comp4'?['left-border',
-            'nav-li']:'nav-li'" (click)="selectedComponent='comp4' ">
+            'nav-li']:'nav-li'" (click)="selectedComponent='comp4'; openCompaign() ">
             <img src="assets/compiegn.png" alt="" class="li-img">
             <p class="text">Compaign</p>
         </li>
         <li [ngClass]="selectedComponent=='comp5'?['left-border',
-            'nav-li']:'nav-li'" (click)="selectedComponent='comp5' ">
+            'nav-li']:'nav-li'" (click)="selectedComponent='comp5'; openProduct() ">
             <img src="assets/product.png" alt="" class="li-img">
             <p class="text">Product</p>
         </li>
         <li [ngClass]="selectedComponent=='comp6'?['left-border',
-            'nav-li']:'nav-li'" (click)="selectedComponent='comp6' ">
+            'nav-li']:'nav-li'" (click)="selectedComponent='comp6';  openQueries() ">
             <img src="assets/queries.png" alt="" class="li-img">
             <p class="text">Queries</p>
         </li>
         <li [ngClass]="selectedComponent=='comp7'?['left-border',
-            'nav-li-last']:'nav-li'" (click)="selectedComponent='comp7' ">
+            'nav-li-last']:'nav-li'" (click)="selectedComponent='comp7'; openUserManager() ">
             <img src="assets/userManager.png" alt="" class="li-img">
             <p class="text">User Manager </p>
         </li>

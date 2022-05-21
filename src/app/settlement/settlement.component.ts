@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-settlement',
   templateUrl: './settlement.component.html',
@@ -7,7 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SettlementComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router:Router) { }
+  openSettlementContent(){
+     this.router.navigate(["/settlement"])
+  }
   settlementList:any[]=[
     {
       "src":"assets/ionic-md-rocket.png",

@@ -21,9 +21,7 @@
     margin-bottom: 30px;
   
 }
-.left-border{
-    border-left: 5px solid #de8d01 ;
-}
+
 .nav-li-last{
     width: 100%;
     text-align: center;
@@ -31,6 +29,9 @@
    padding: 1px;
     margin-bottom: 30px;
   
+}
+.left-border{
+    border-left: 5px solid #de8d01 ;
 }
 .nav-li:hover{
     background-color: #51504f;

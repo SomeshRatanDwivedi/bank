@@ -13,22 +13,22 @@ export class LeftnavbarComponent implements OnInit {
    this.router.navigate(["/working"])
   }
   openCollection(){
-
+    this.router.navigate(["/settle"])
   }
   openRecovery(){
-
+this.router.navigate(["/recovery"])
   }
   openCompaign(){
-
+this.router.navigate(["/compaign"])
   }
   openProduct(){
-
+this.router.navigate(["/product"])
   }
   openQueries(){
-
+this.router.navigate(["/queries"])
   }
   openUserManager(){
-
+this.router.navigate(["/user"])
   }
 
   ngOnInit(): void {
