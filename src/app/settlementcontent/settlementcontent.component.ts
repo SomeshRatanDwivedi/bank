@@ -13,7 +13,10 @@ export class SettlementcontentComponent implements OnInit {
     this.fillpageButton();
   }
   title = 'bank';
+  /*
   
+  */ 
+  settleTableBtn:string=''
   user:string="user";
   rupee:string="rupee";
   selected:string="user";
@@ -40,7 +43,10 @@ export class SettlementcontentComponent implements OnInit {
   ];
   selectedPage:number=10;
   selectedSettlement:string="";
- 
+  tos:string=''
+    findTos(){
+        console.log(this.tos)
+    }
   settlementArray1:any[]=[{
     SNo: "1",
     TOS: "1,00,000",

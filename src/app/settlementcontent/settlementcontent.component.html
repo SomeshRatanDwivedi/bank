@@ -116,7 +116,59 @@
                             <div class="div-col">{{row.ctsStartDate}}</div>
                             <div class="div-col">{{row.ctsAmount}}</div>
                             <div class="div-col">{{row.ctsNoOfEmi}}</div>
-                            <div class="div-col">{{row.status}}</div>
+                            <div class="div-col">
+                                <div class="btn-group">
+                                <button class="left-btn">
+                                    <span class="display-block"><i class="fa-solid fa-check"></i></span>
+                                    <span class="display-block">Approve</span>
+                                </button>
+                                <button class="right-btn" (click)="settleTableBtn=row.SNo; tos=row.TOS; findTos()">
+                                    <span class="display-block"><i class="fa-solid fa-rotate-right"></i></span>
+                                    <span class="display-block">Counter</span>
+                                    <div class="counter-content" *ngIf="settleTableBtn===row.SNo">
+                                           <div class="model-header">
+                                            <span ><i class="fa-solid fa-rotate-right"></i></span>
+                                            <span  >Counter Offer</span>
+                                           </div>
+                                           <div class="model-body">
+                                               <div class="d-flex m-3">
+                                                     <div class="row-style">
+                                                         <label for="" class="font-style">Total Outstanding</label>
+                                                         <form #formInfo1="ngForm">
+                                                         <input type="text" name="tos" readonly class="text-style" [(ngModel)]="tos">
+                                                        </form>
+                                                     </div>
+                                                     <div class="row-style">
+                                                        <label for="" class="font-style">Counter Offer Amount</label>
+                                                        <form #formInfo2="ngForm">
+                                                        <input type="text" name="counterOffer" class="text-style" placeholder="Enter The Amount" ngModel>
+                                                       </form>
+                                                    </div>
+                                               </div>
+                                               <div class="d-flex m-3">
+                                                <div class="row-style">
+                                                    <label for="" class="font-style">Number Of EMI</label>
+                                                    <form #formInfo1="ngForm">
+                                                    <input type="text" name="tos" readonly class="text-style" placeholder="Select Duration" ngModel>
+                                                   </form>
+                                                </div>
+                                                <div class="row-style">
+                                                   <label for="" class="font-style">EMI Start Date</label>
+                                                   <form #formInfo2="ngForm">
+                                                   <input type="text" name="counterOffer" class="text-style" placeholder="Enter The Amount" ngModel>
+                                                  </form>
+                                               </div>
+
+                                               </div>
+                                               <div class="d-flex m-3">
+
+                                               </div>
+                                           </div>
+                                    </div>
+                                </button>
+                               
+                            </div>
+                        </div>
                             <div class="div-col">{{row.actionDate}}</div>
                             <div class="div-col">{{row.actionUser}}</div>
                         </div>
