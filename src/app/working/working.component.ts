@@ -107,6 +107,7 @@ export class WorkingComponent implements OnInit {
 changeSelectCard3(){
  let date=new Date();
  this.selectedTime=date.toString();
+ 
 }
 
 }

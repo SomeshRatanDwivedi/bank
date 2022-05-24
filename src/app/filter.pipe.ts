@@ -4,7 +4,7 @@ import { Pipe, PipeTransform } from '@angular/core';
   name: 'filter'
 })
 export class FilterPipe implements PipeTransform {
-  transform(arr:any[], selected:boolean, selectedTime:string): any[] {
+  transform(arr:any[], selected:boolean, time:string ): any[] {
      const newarr=arr.filter((ele:any)=>{
        return ele.checked==selected;
      })

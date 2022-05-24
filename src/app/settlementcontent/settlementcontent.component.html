@@ -6,7 +6,8 @@
         <div class="child2">
             <div class="child2-first">
                 <div [ngClass]="selected=='user'?'user':'prev1'"
-                    (click)="selected='user'; selectedbtn=1;   selectedArray=settlementArray1; fillpageButton(); show()">
+                    (click)="selected='user'; selectedbtn=1;
+                    selectedArray=settlementArray1; fillpageButton(); show()">
                     <i class="fa-regular fa-file-lines"></i>
                     <i class="fa-solid fa-hourglass"></i>
                 </div>
@@ -14,7 +15,8 @@
 
                 </div>
                 <div [ngClass]="selected=='rupee'?['rupee','user']:'prev2'"
-                    (click)="selected='rupee'; selectedbtn=1; selectedArray=settlementArray2; fillpageButton(); show()">
+                    (click)="selected='rupee'; selectedbtn=1;
+                    selectedArray=settlementArray2; fillpageButton(); show()">
                     <i class="fa-regular fa-file-lines"></i>
                     <i class="fa-solid fa-square-check"></i>
                 </div>
@@ -104,75 +106,39 @@
                         <div class="div-col" *ngFor="let i of
                             settlementHeading">{{i}}</div>
                     </div>
-                    
-                        <div class="div-row" *ngFor="let row of selectedArray
-                            | settlepage:selectedPage:selectedbtn">
-                            <div class="div-col">{{row.SNo}}</div>
-                            <div class="div-col">{{row.TOS}}</div>
-                            <div class="div-col">{{row.preApproved}}</div>
-                            <div class="div-col">{{row.payStartDate}}</div>
-                            <div class="div-col">{{row.offerAmount}}</div>
-                            <div class="div-col">{{row.noOfEmi}}</div>
-                            <div class="div-col">{{row.ctsStartDate}}</div>
-                            <div class="div-col">{{row.ctsAmount}}</div>
-                            <div class="div-col">{{row.ctsNoOfEmi}}</div>
-                            <div class="div-col">
-                                <div class="btn-group">
+
+                    <div class="div-row" *ngFor="let row of selectedArray
+                        | settlepage:selectedPage:selectedbtn">
+                        <div class="div-col">{{row.SNo}}</div>
+                        <div class="div-col">{{row.TOS}}</div>
+                        <div class="div-col">{{row.preApproved}}</div>
+                        <div class="div-col">{{row.payStartDate}}</div>
+                        <div class="div-col">{{row.offerAmount}}</div>
+                        <div class="div-col">{{row.noOfEmi}}</div>
+                        <div class="div-col">{{row.ctsStartDate}}</div>
+                        <div class="div-col">{{row.ctsAmount}}</div>
+                        <div class="div-col">{{row.ctsNoOfEmi}}</div>
+                        <div class="div-col">
+                            <div class="btn-group">
                                 <button class="left-btn">
-                                    <span class="display-block"><i class="fa-solid fa-check"></i></span>
+                                    <span class="display-block"><i
+                                            class="fa-solid fa-check"></i></span>
                                     <span class="display-block">Approve</span>
                                 </button>
-                                <button class="right-btn" (click)="settleTableBtn=row.SNo; tos=row.TOS; findTos()">
-                                    <span class="display-block"><i class="fa-solid fa-rotate-right"></i></span>
+                                <button class="right-btn"
+                                    (click)="selectedRow(row);
+                                    settleTableBtn='first'">
+                                    <span class="display-block"><i
+                                            class="fa-solid fa-rotate-right"></i></span>
                                     <span class="display-block">Counter</span>
-                                    <div class="counter-content" *ngIf="settleTableBtn===row.SNo">
-                                           <div class="model-header">
-                                            <span ><i class="fa-solid fa-rotate-right"></i></span>
-                                            <span  >Counter Offer</span>
-                                           </div>
-                                           <div class="model-body">
-                                               <div class="d-flex m-3">
-                                                     <div class="row-style">
-                                                         <label for="" class="font-style">Total Outstanding</label>
-                                                         <form #formInfo1="ngForm">
-                                                         <input type="text" name="tos" readonly class="text-style" [(ngModel)]="tos">
-                                                        </form>
-                                                     </div>
-                                                     <div class="row-style">
-                                                        <label for="" class="font-style">Counter Offer Amount</label>
-                                                        <form #formInfo2="ngForm">
-                                                        <input type="text" name="counterOffer" class="text-style" placeholder="Enter The Amount" ngModel>
-                                                       </form>
-                                                    </div>
-                                               </div>
-                                               <div class="d-flex m-3">
-                                                <div class="row-style">
-                                                    <label for="" class="font-style">Number Of EMI</label>
-                                                    <form #formInfo1="ngForm">
-                                                    <input type="text" name="tos" readonly class="text-style" placeholder="Select Duration" ngModel>
-                                                   </form>
-                                                </div>
-                                                <div class="row-style">
-                                                   <label for="" class="font-style">EMI Start Date</label>
-                                                   <form #formInfo2="ngForm">
-                                                   <input type="text" name="counterOffer" class="text-style" placeholder="Enter The Amount" ngModel>
-                                                  </form>
-                                               </div>
-
-                                               </div>
-                                               <div class="d-flex m-3">
-
-                                               </div>
-                                           </div>
-                                    </div>
                                 </button>
-                               
+
                             </div>
                         </div>
-                            <div class="div-col">{{row.actionDate}}</div>
-                            <div class="div-col">{{row.actionUser}}</div>
-                        </div>
-                    
+                        <div class="div-col">{{row.actionDate}}</div>
+                        <div class="div-col">{{row.actionUser}}</div>
+                    </div>
+
 
                 </div>
             </div>
@@ -191,5 +157,70 @@
                 </div>
             </div>
 
+        </div>
+    </div>
+    <div class="counter-content" *ngIf="settleTableBtn==='first'">
+        <div class="model-header">
+            <span><i class="fa-solid fa-rotate-right mid"></i></span>
+            <span>Counter Offer</span>
+        </div>
+        <div class="model-body">
+            <div class="d-flex m-3">
+                <div class="row-style">
+                    <label for="" class="font-style">Total Outstanding</label>
+                    <form #formInfo1="ngForm">
+                        <input type="text" name="tos" readonly
+                            class="text-style" [(ngModel)]="row.TOS">
+                    </form>
+                </div>
+                <div class="row-style">
+                    <label for="" class="font-style">Counter Offer Amount</label>
+                    <form #formInfo2="ngForm">
+                        <input type="text" name="counterOffer"
+                            class="text-style" placeholder="Enter The Amount"
+                            ngModel>
+                    </form>
+                </div>
+            </div>
+            <div class="d-flex m-3">
+                <div class="row-style">
+                    <label for="" class="font-style">Number Of EMI</label>
+                    <div class="text-style" (mouseover)="showEmi=true" (mouseleave)="showEmi=false" >
+                        <div class="card4">
+                            <span class="card-text2 white" *ngIf="selectedEmi">{{selectedEmi}}</span>
+                            <span class="card-text2 white" *ngIf="!selectedEmi">Select Duration</span>
+                            <span class="font font3 white"><i class="fa-solid
+                                    fa-chevron-down"></i></span>
+                        </div>
+                        <div class="emi-child"
+                            *ngIf="showEmi">
+                            <a *ngFor="let emi of NumberOfEmi "
+                                (click)="selectedEmi=emi">
+                                <span [ngClass]="selectedEmi==emi?'card-text2':'white'">{{emi}}</span>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="row-style">
+                    <label for="" class="font-style">EMI Start Date</label>
+                    <input type="date" name="counterOffer" class="text-style"
+                        placeholder="selectDate">
+
+                </div>
+
+            </div>
+            <div class="d-flex m-3">
+                <div class="row-style">
+                    <button class="counter-btn black"
+                        (click)="settleTableBtn=''">Cancel</button>
+
+                </div>
+                <div class="row-style">
+                    <button class="counter-btn blue" (click)="settleTableBtn=''">Submit
+                        Offer</button>
+                </div>
+
+            </div>
         </div>
     </div>

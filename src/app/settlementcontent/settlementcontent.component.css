@@ -472,10 +472,9 @@ input:focus{
     border: 1px solid rgba(0,0,0,.2);
     border-radius: 0.3rem;
     outline: 0;
-    border: 1px solid red ;
-    position: absolute;
-    right: 33px;
-    top: -5px;
+    position: fixed;
+    right: 339px;
+    top: 136px;
     width: 800px;
     border-radius: 8px 8px 0 0!important;
     box-shadow: 0 4px 46px rgb(174 19 254 / 24%);
@@ -488,6 +487,7 @@ input:focus{
     opacity: 1;
     padding: 18px;
     z-index: 2;
+    text-align: center;
 }
 .display-block{
     display: block;
@@ -531,5 +531,62 @@ input:focus{
     border: 0!important;
     color: #fff;
     padding: 25px;
+    width: 100%;
 
+}
+.black{
+    background: transparent linear-gradient(180deg,#000,#000) 0 0 no-repeat padding-box;
+}
+.blue{
+    background: transparent linear-gradient(180deg,#ae13fe,#570a7f) 0 0 no-repeat padding-box;
+}
+.counter-btn{
+    box-shadow: 0 3px 6px #000;
+    border-radius: 7px;
+    opacity: 1;
+    font-size: 20px;
+    color: #fff;
+    padding: 10px;
+}
+::-webkit-calendar-picker-indicator {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" viewBox="0 0 24 24"><path fill="%23bbbbbb" d="M20 3h-1V1h-2v2H7V1H5v2H4c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 18H4V8h16v13z"/></svg>');
+  }
+  .emi-child{
+    position: absolute;
+    top: 100%;
+    left: 33px;
+    float: left;
+    font-size: 1rem;
+    text-align: left;
+    list-style: none;
+    background-color: black;
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: 0.25rem;
+    width: 347px;
+    top: 327px;
+    z-index: 1;
+  }
+  .emi-child > a{
+    display: block;
+    width: 100%;
+    padding: 0.25rem 1.5rem;
+    clear: both;
+    font-weight: 400;
+    color: #212529;
+    text-align: inherit;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+    position: relative;
+    height: 30px;
+}
+.white{
+    color: white;
+    cursor: pointer;
+}
+.white:hover{
+    color: #df8f01;
+}
+.mid{
+    float: none;
 }

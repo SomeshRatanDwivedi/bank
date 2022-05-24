@@ -511,7 +511,12 @@ export class SettlementcontentComponent implements OnInit {
     actionUser: "Shivani",
     offerOpen: !1
 }];
-
+NumberOfEmi:number[]=[1, 2, 3, 4];
+selectedEmi?: number;
+showEmi:boolean=false;
+koibhi(){
+    console.log(this.showEmi)
+}
 pageButton:number[]=[];
 selectedArray=this.settlementArray1;
 sizeOfsettlementArray1:number=this.selectedArray.length;
@@ -534,10 +539,13 @@ show(){
     this.end=Math.min(this.start+this.selectedPage-1,this.sizeOfsettlementArray1) ;  
   }
 
-
-
+row:any;
+selectedRow(ele:any){
+  this.row=ele;
+}
 settlementHeading:string[]= ["S.No.", "TOS", "Pre-Approved Offer Amount", "Payment Start Date", "Offer Amount", "No. Of EMI", "Ctr Offer Start Date", "Ctr Amount", "Ctr No. Of EMI", "Status", "Action Date", "Action User"]
 }
+
 function show() {
     throw new Error('Function not implemented.');
 }
