@@ -445,7 +445,8 @@ input:focus{
 }
 .left-btn{
     padding: 4px;
-    background-color: #20cbaa;
+    background: transparent linear-gradient(180deg,#20cbaa,#106655) 0 0 no-repeat padding-box;
+    box-shadow: 0 3px 6px #000;
     color: white;
     border-radius: 4px 0 0 4px;
     border: 0;
@@ -453,7 +454,8 @@ input:focus{
     text-align: center;
 }
 .right-btn{
-    background-color: #ae13fe;
+    background: transparent linear-gradient(180deg,#ae13fe,#570a7f) 0 0 no-repeat padding-box;
+    box-shadow: 0 3px 6px #000;
     padding: 4px;
     color: white;
     border-radius: 0 4px 4px 0;
